@@ -1,14 +1,6 @@
-import os
+# Could have brute forced it with permutations but wanted to see if I create something more optimal and somewhat simple.
 
-def get_raw_data(dir=None):
-    if not dir:
-        dir = os.path.dirname(os.path.realpath(__file__))
-    with open(f'{dir}/../input.txt', 'r') as f:
-        return f.readlines()
-
-
-def cleaned_data(data):
-    return sorted([int(_.strip('\n')) for _ in data])
+from day1.helpers import get_raw_data, cleaned_data
 
 
 def get_midpoint_idx(data_list):
