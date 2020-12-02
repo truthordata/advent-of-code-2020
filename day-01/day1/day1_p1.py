@@ -1,4 +1,5 @@
 # Could have brute forced it with permutations but wanted to see if I create something more optimal and somewhat simple.
+# Based on timeit, solution is ~50x faster than doing it in a similar fashion to part 2. Cool!
 
 from day1.helpers import get_raw_data, cleaned_data
 
